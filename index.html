@@ -3,24 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
     <title>Bakhtiar Kamil</title>
     <link href="style/output.css" rel="stylesheet"/>
   </head>
   <body class="bg-custom-bg">
     <!-- Header Start -->
     <header
-      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-50 transition-all duration-300"
     >
       <div class="container">
         <div class="flex items-center justify-between relative">
           <div class="px-4">
-            <a href="#home" class="font-bold text-lg text-primary block py-6"
-              >MyPortofolio</a
+            <a href="#home" class="font-bold text-2xl font-heading text-indigo-600 block py-6 tracking-tight"
+              >MyPortofolio.</a
             >
           </div>
           <div class="flex items-center px-4">
@@ -31,60 +29,60 @@
               class="block absolute right-4 lg:hidden"
             >
               <span
-                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+                class="hamburger-line origin-top-left"
               ></span>
               <span
-                class="hamburger-line transition duration-300 ease-in-out"
+                class="hamburger-line"
               ></span>
               <span
-                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+                class="hamburger-line origin-bottom-left"
               ></span>
             </button>
 
             <nav
               id="nav-menu"
-              class="hidden absolute py-6 bg-white shadow-lg rounded-lg max-w-[350px]  w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+              class="hidden absolute py-5 bg-white shadow-xl rounded-2xl max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none border border-gray-100 lg:border-none"
             >
               <ul class="block lg:flex">
                 <li class="group">
                   <a
                     href="#home"
-                    class="text-base text-dark py-2 mx-8 flex hover:text-primary"
+                    class="text-base font-medium text-dark py-2 mx-6 lg:mx-4 flex hover:text-indigo-600 transition-colors"
                     >Home</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#about"
-                    class="text-base text-dark py-2 mx-8 flex hover:text-primary"
+                    class="text-base font-medium text-dark py-2 mx-6 lg:mx-4 flex hover:text-indigo-600 transition-colors"
                     >About Me</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#portofolio"
-                    class="text-base text-dark py-2 mx-8 flex hover:text-primary"
+                    class="text-base font-medium text-dark py-2 mx-6 lg:mx-4 flex hover:text-indigo-600 transition-colors"
                     >Portofolio</a
                   >
                 </li>
                 <li class="group">
                   <a
                     href="#blog"
-                    class="text-base text-dark py-2 mx-8 flex hover:text-primary"
+                    class="text-base font-medium text-dark py-2 mx-6 lg:mx-4 flex hover:text-indigo-600 transition-colors"
                     >Certification</a
                   >
                 </li>
-                <li class="group lg:hidden">
+                <li class="group lg:hidden mt-2 mb-2">
                   <a
                     href="#contactform"
-                    class="text-base text-dark py-2 mx-8 flex hover:text-primary"
+                    class="text-base font-medium text-dark py-2 mx-6 flex hover:text-indigo-600 transition-colors"
                     >Send a Message!</a
                   >
                 </li>
-                <li class="group flex justify-center items-center">
+                <li class="group flex justify-center items-center mt-4 lg:mt-0 lg:ml-4">
                   <a
                   href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:59167228-f807-49d6-94ca-d3ad0095240d" target="_blank"
-                  class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+                  class="btn-primary w-[80%] lg:w-auto text-center"
                   >Download CV</a
                 >
                 </li>
@@ -96,52 +94,50 @@
     </header>
     <!-- Header end -->
     <!-- Hero section start -->
-    <section class="pt-36" id="home">
-      <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center px-8 lg:w-1/2 xl:px-24">
-            <h1 class="text-xl font-bold text-primary md:text-xl xl:text-2xl">
+    <section class="pt-36 pb-20 relative overflow-hidden" id="home">
+      <!-- Decorative background blur -->
+      <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+      <div class="absolute top-0 -right-4 w-72 h-72 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" style="animation-delay: 2s"></div>
+      <div class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob" style="animation-delay: 4s"></div>
+
+      <div class="container relative z-10">
+        <div class="flex flex-wrap items-center">
+          <div class="w-full self-center px-4 lg:w-1/2 xl:px-8">
+            <h1 class="text-lg font-semibold text-indigo-600 md:text-xl mb-2 tracking-wide uppercase">
               Hello, I'm
-              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl"
+              <span class="block font-bold text-dark text-5xl mt-2 lg:text-7xl font-heading leading-tight lowercase tracking-tighter" style="text-transform: capitalize;"
                 >Bakhtiar Kamil</span
               >
             </h1>
-            <h2 class="font-medium text-secondary text-lg mb-5">
-              IT Support Specialist | IT Project Manager | Software Engineer | Prompt Engineer | Undergraduate Digital Business
+            <h2 class="font-medium text-secondary text-lg mb-6 leading-relaxed max-w-lg mt-4">
+              IT Support Specialist <span class="text-gray-300 mx-1">|</span> Software Engineer <span class="text-gray-300 mx-1">|</span> Tech Enthusiast
             </h2>
-            <p class="font-medium text-secondary mb-10 leading-relaxed">
-              "Saya yakin bahwa setiap tantangan dalam hidup adalah peluang untuk <span class="font-bold">Tumbuh dan Belajar.</span>"
+            <p class="font-normal text-gray-500 mb-10 leading-relaxed max-w-lg text-lg">
+              "I believe that every challenge in life is an opportunity to <span class="font-semibold text-indigo-600">grow and learn.</span>"
             </p>
-            <a
-              href="#contactform"
-              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-              >Send a Message!</a
-            >
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#contactform"
+                class="btn-primary"
+                >Send a Message!</a
+              >
+              <a
+                href="#portofolio"
+                class="text-base font-semibold text-dark bg-white border border-gray-200 py-3 px-8 rounded-full shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out"
+                >View My Work</a
+              >
+            </div>
           </div>
 
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="relative mt-10 lg:mt-0 lg:right-0">
+          <div class="w-full self-end px-4 mt-16 lg:mt-0 lg:w-1/2">
+            <div class="relative max-w-md mx-auto">
+              <!-- Soft shadow behind image -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-indigo-200 to-purple-200 rounded-full blur-2xl opacity-60 transform scale-90"></div>
               <img
-                class="max-w-full mx-auto w-[300px]"
+                class="relative z-10 mx-auto w-full object-cover p-4"
                 src="./style/img/Bakhtiarfiks.png"
                 alt="Bakhtiar"
               />
-              <span
-                class="absolute -bottom-0 left-1/2 -z-10 -translate-x-1/2 md:scale-125"
-              >
-                <svg
-                  width="400"
-                  height="400"
-                  viewBox="0 0 200 200"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill="#B5734C"
-                    d="M48,-58.3C60,-47.1,66.1,-29.9,71.4,-10.9C76.8,8.1,81.5,29,74.9,45.9C68.3,62.9,50.4,76,32.1,78.5C13.8,80.9,-4.9,72.8,-24.7,66.3C-44.5,59.8,-65.5,54.8,-72.8,42.1C-80.2,29.3,-73.9,8.7,-66.9,-8.5C-59.9,-25.6,-52.2,-39.3,-40.9,-50.6C-29.6,-61.9,-14.8,-70.8,1.6,-72.7C18,-74.6,36,-69.4,48,-58.3Z"
-                    transform="translate(100 100) scale(1.1)"
-                  />
-                </svg>
-              </span>
             </div>
           </div>
         </div>
@@ -153,40 +149,37 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2 xl:px-8">
-            <h4 class="font-bold uppercase text-primary text-lg xl:text-2xl">
+            <h4 class="font-bold uppercase text-indigo-600 text-lg xl:text-xl tracking-wider mb-2">
               About Me
             </h4>
-            <h2 class="font-bold text-dark text-lg mb-2 max-w-md lg:text-xl">
-               IT Support Specialist | IT Project Manager | Software Engineer | Prompt Engineer | Undergraduate Digital Business
+            <h2 class="font-bold text-dark text-3xl mb-6 max-w-md lg:text-4xl font-heading leading-tight">
+               Final year student major in Digital Business
             </h2>
-            <p class="font-medium text-sm text-secondary max-w-xl lg:text-sm text-justify indent">
-              <!-- <span class="xl:block pl-8"></span>  -->
-              With a strong passion and skills in front-end web development and full-stack mobile development. 
-              Outside of my studies, I participate in training programs to enhance my skills in front-end development 
-              and full-stack mobile development. As a communicative individual, I am able to work well in a team 
-              and have strong problem-solving abilities. I am eager to grow, adaptable, and interested in learning 
-              new things. I aspire to develop a career in front-end development and full-stack mobile development 
-              and contribute significantly to the growth and success of a company through innovation and effective digital strategies.
+            <p class="font-normal text-base text-gray-500 max-w-xl leading-relaxed text-left mb-6">
+              With a strong passion and foundational skills in IT Support and system troubleshooting, I actively participate in training programs to enhance my knowledge in networking, operating systems, and technical support tools. Outside of my academic studies, I consistently seek hands-on experiences to sharpen my abilities in diagnosing and resolving technical issues.
+            </p>
+            <p class="font-normal text-base text-gray-500 max-w-xl leading-relaxed text-left">
+              As a communicative and collaborative individual, I work effectively in team environments and possess strong problem-solving skills. I am eager to grow, adaptable, and enthusiastic about learning new technologies. I aspire to build a professional career in IT Support or Help Desk roles and contribute to an organization’s success by ensuring smooth technical operations and excellent end-user experiences.
             </p>
           </div>
 
           <div class="w-full px-4 lg:w-1/2">
             <h3
-              class="font-semibold text-dark text-xl mb-2 lg:text-sm lg:pt-10"
+              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 font-heading"
             >
               Let’s Link Up!
             </h3>
-            <p class="font-medium text-sm text-secondary mb-6 lg:text-sm text-justify indent">
+            <p class="font-normal text-base text-gray-500 mb-8 leading-relaxed text-left max-w-md">
               Explore My Journey Further! I am always open to collaboration and learning from others. 
               Feel free to connect with me on social media platforms, where I share my thoughts, projects, and career journey. 
               Let's exchange ideas and create something amazing together!
             </p>
-            <div class="flex items-center">
+            <div class="flex items-center gap-4">
               <!-- linkedin -->
               <a
                 href="http://www.linkedin.com/in/bakhtiarkamil"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-black hover:border-primary hover:bg-primary hover:text-white text-black"
+                class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 text-gray-700 hover:bg-indigo-600 hover:text-white transition-all duration-300 ease-in-out shadow-sm hover:shadow-lg hover:-translate-y-1"
               >
                 <svg
                   role="img"
@@ -205,7 +198,7 @@
               <a
                 href="https://www.instagram.com/_bkamil/"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-black hover:border-primary hover:bg-primary hover:text-white text-black"
+                class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 text-gray-700 hover:bg-pink-600 hover:text-white transition-all duration-300 ease-in-out shadow-sm hover:shadow-lg hover:-translate-y-1"
               >
                 <svg
                   role="img"
@@ -224,7 +217,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-black hover:border-primary hover:bg-primary hover:text-white text-black"
+                class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 text-gray-700 hover:bg-black hover:text-white transition-all duration-300 ease-in-out shadow-sm hover:shadow-lg hover:-translate-y-1"
               >
                 <svg
                   role="img"
@@ -243,7 +236,7 @@
               <a
                 href="#"
                 target="_blank"
-                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-black hover:border-primary hover:bg-primary hover:text-white text-black"
+                class="w-12 h-12 rounded-full flex justify-center items-center bg-gray-100 text-gray-700 hover:bg-black hover:text-white transition-all duration-300 ease-in-out shadow-sm hover:shadow-lg hover:-translate-y-1"
               >
                 <svg
                   role="img"
@@ -266,17 +259,17 @@
     <!-- About section end -->
 
     <!--Portofolio start  -->
-    <section id="portofolio" class="pt-36 pb-16 bg-slate-200">
+    <section id="portofolio" class="pt-36 pb-32 bg-gray-50">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-2xl text-primary">Portofolio</h4>
+            <h4 class="font-bold uppercase text-indigo-600 text-lg tracking-wider mb-2">Portfolio</h4>
             <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-4xl"
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl font-heading"
             >
-              Recent Project
+              Recent Projects
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
+            <p class="font-normal text-md text-gray-500 md:text-lg">
               This project is the result of intensive collaboration and continuous learning, 
               demonstrating my ability to work in a team and overcome challenges.
             </p>
@@ -284,81 +277,85 @@
         </div>
 
         <div
-          class="w-full px-4 flex flex-wrap justify-start xl:w-10/12 xl:mx-auto"
+          class="w-full px-4 flex flex-wrap justify-center xl:w-11/12 xl:mx-auto gap-y-12"
         >
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="style/img/academy.png"
-                alt="landing"
-                class="w-full"
-              />
+          <div class="px-4 md:w-1/2">
+            <div class="glass-card h-full p-6 group cursor-pointer">
+              <div class="rounded-xl shadow-sm overflow-hidden mb-6 relative">
+                 <div class="absolute inset-0 bg-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 z-10 pointer-events-none"></div>
+                 <img
+                  src="style/img/academy.png"
+                  alt="landing"
+                  class="w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-bold mt-5 mb-3 text-dark font-heading group-hover:text-indigo-600 transition-colors">
+                KamilAcademy Landing Page
+              </h3>
+              <p class="font-normal text-base text-gray-500 text-left leading-relaxed">
+                Membuat landing page untuk kursus online dengan brand KamilAcademy menggunakan HTML, 
+                TailwindCSS, dan JavaScript. Proyek ini melibatkan 2 orang dan saya berkontribusi sebesar 70% dalam proyek ini, 
+                yang melibatkan pengembangan front-end, dan pengintegrasian fitur interaktif. 
+              </p>
             </div>
-            <h3 class="text-xl font-semibold mt-5 mb-3 text-dark">
-              KamilAcademy Landing Page
-            </h3>
-            <p class="font-medium text-base text-secondary text-justify indent">
-              Membuat landing page untuk kursus online dengan brand KamilAcademy menggunakan HTML, 
-              TailwindCSS, dan JavaScript. Proyek ini melibatkan 2 orang dan saya berkontribusi sebesar 70% dalam proyek ini, 
-              yang melibatkan pengembangan front-end, dan pengintegrasian fitur interaktif. 
-              Manfaat dari proyek ini termasuk meningkatkan keterampilan desain web, memahami prinsip-prinsip pemasaran digital, dan menciptakan platform yang menarik untuk mempromosikan kursus online. 
-              Proyek ini ditujukan sebagai tugas akhir dari mata kuliah Digital Marketing.
-            </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="style/img/eserra.png"
-                alt="landing"
-                class="w-full"
-              />
+          <div class="px-4 md:w-1/2">
+            <div class="glass-card h-full p-6 group cursor-pointer">
+              <div class="rounded-xl shadow-sm overflow-hidden mb-6 relative">
+                 <div class="absolute inset-0 bg-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 z-10 pointer-events-none"></div>
+                 <img
+                  src="style/img/eserra.png"
+                  alt="landing"
+                  class="w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-bold mt-5 mb-3 text-dark font-heading group-hover:text-indigo-600 transition-colors">
+                Eserra (E-Commerce Universitas Serang Raya)
+              </h3>
+              <p class="font-normal text-base text-gray-500 text-left leading-relaxed">
+                Menjadi bagian dari proyek penelitian sekaligus pengembangan e-commerce 
+                Universitas Serang Raya dengan menggunakan bahasa 
+                pemrograman Dart dan framework Flutter. Aplikasi ini bertujuan untuk 
+                memfasilitasi transaksi jual beli di lingkungan kampus.
+              </p>
             </div>
-            <h3 class="text-xl font-semibold mt-5 mb-3 text-dark">
-              Eserra (E-Commerce Universitas Serang Raya)
-            </h3>
-            <p class="font-medium text-base text-secondary text-justify indent">
-              Menjadi bagian dari proyek penelitian sekaligus pengembangan e-commerce 
-              Universitas Serang Raya dengan menggunakan bahasa 
-              pemrograman Dart dan framework Flutter. Aplikasi ini bertujuan untuk 
-              memfasilitasi transaksi jual beli di lingkungan kampus dengan menyediakan platform yang intuitif dan 
-              mudah digunakan. Proyek ini melibatkan empat orang, di mana saya berperan sebagai mobile developer. 
-              Proyek ini masih dalam tahap pengembangan dan nantinya akan dijadikan e-commerce resmi Universitas Serang Raya.
-               Penelitian dan pengembangan ini 
-              memberikan kontribusi signifikan terhadap kemajuan prodi bisnis digital.
-            </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="style/img/marketing.png"
-                alt="landing"
-                class="w-full"
-              />
+          <div class="px-4 md:w-1/2">
+            <div class="glass-card h-full p-6 group cursor-pointer">
+              <div class="rounded-xl shadow-sm overflow-hidden mb-6 relative">
+                 <div class="absolute inset-0 bg-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 z-10 pointer-events-none"></div>
+                 <img
+                  src="style/img/marketing.png"
+                  alt="landing"
+                  class="w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-bold mt-5 mb-3 text-dark font-heading group-hover:text-indigo-600 transition-colors">
+                Digital Marketing Project
+              </h3>
+              <p class="font-normal text-base text-gray-500 text-left leading-relaxed">
+                Proyek ini menyoroti strategi digital marketing yang komprehensif, termasuk Email Marketing, Social Media Marketing, dan pembuatan Video Konten. 
+                Tujuannya adalah untuk memaksimalkan jangkauan dan interaksi dengan audiens secara online. 
+              </p>
             </div>
-            <h3 class="text-xl font-semibold mt-5 mb-3 text-dark">
-              Digital Marketing Project
-            </h3>
-            <p class="font-medium text-base text-secondary text-justify indent">
-              Proyek ini menyoroti strategi digital marketing yang komprehensif, termasuk Email Marketing, Social Media Marketing, dan pembuatan Video Konten. 
-              Tujuannya adalah untuk memaksimalkan jangkauan dan interaksi dengan audiens secara online. Kombinasi dari strategi-strategi ini dirancang untuk membangun hubungan yang lebih baik dengan 
-              audiens dan meningkatkan visibilitas merek secara keseluruhan. proyek ini ditujukan sebagai tugas akhir dari mata kuliah Digital Marketing.
-            </p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="style/img/radar.png"
-                alt="landing"
-                class="w-full"
-              />
+          <div class="px-4 md:w-1/2">
+            <div class="glass-card h-full p-6 group cursor-pointer">
+              <div class="rounded-xl shadow-sm overflow-hidden mb-6 relative">
+                 <div class="absolute inset-0 bg-indigo-600 opacity-0 group-hover:opacity-10 transition-opacity duration-300 z-10 pointer-events-none"></div>
+                 <img
+                  src="style/img/radar.png"
+                  alt="landing"
+                  class="w-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <h3 class="text-xl font-bold mt-5 mb-3 text-dark font-heading group-hover:text-indigo-600 transition-colors">
+                Online Booking Venue
+              </h3>
+              <p class="font-normal text-base text-gray-500 text-left leading-relaxed">
+                Mengembangkan sebuah situs web untuk booking venue menggunakan HTML, Bootsrap, dan PHP. Proyek ini melibatkan penggunaan PHP sebagai server database untuk menyimpan data booking, serta fitur untuk mencetak bukti booking dalam format PDF. 
+              </p>
             </div>
-            <h3 class="text-xl font-semibold mt-5 mb-3 text-dark">
-              Online Booking Venue
-            </h3>
-            <p class="font-medium text-base text-secondary text-justify indent">
-              Mengembangkan sebuah situs web untuk booking venue menggunakan HTML, Bootsrap, dan PHP. Proyek ini melibatkan penggunaan PHP sebagai server database untuk menyimpan data booking, serta fitur untuk mencetak bukti booking dalam format PDF. 
-              Proyek ini ditujukan sebagai tugas dari mata kuliah Web and Mobile Technology.
-            </p>
           </div>
         </div>
       </div>
@@ -366,111 +363,55 @@
     <!-- Portofolio end -->
 
     <!-- skills start -->
-    <section id="skill" class="pt-36 pb-32 bg-primary">
+    <section id="skill" class="pt-36 pb-32 bg-dark">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16">
+            <h4 class="font-bold uppercase text-indigo-400 text-sm tracking-wider mb-2">My Arsenal</h4>
             <h2
-              class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
+              class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl font-heading"
             >
               Technical Skills
             </h2>
-            <p class="font-medium text-md text-custom-bg md:text-lg">
+            <p class="font-normal text-base text-gray-400 md:text-lg max-w-2xl mx-auto">
               Possessing a range of skills that include Beginner, Advanced, 
-              and Expert levels, I am prepared to face challenges at various 
-              levels in this field, from basic understanding to in-depth capabilities
+              and Expert levels, I am prepared to face challenges and deliver high-quality solutions.
             </p>
           </div>
         </div>
         <div class="w-full px-4">
-          <div class="flex flex-wrap items-center justify-center">
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl-mx-8"
-            >
-              <img
-                src="style/img/clients/Dart_programming_language_logo.svg.png"
-                alt="dart"
-                class=""
-              />
-              <p class="mt-2 mx-8">Beginner</p>
+          <div class="flex flex-wrap items-center justify-center gap-6">
+            <a href="#" class="group relative flex flex-col items-center justify-center w-[130px] h-[130px] bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+              <img src="style/img/clients/Dart_programming_language_logo.svg.png" alt="dart" class="h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              <p class="mt-4 text-xs font-semibold text-gray-400 group-hover:text-white transition-colors uppercase tracking-wider">Beginner</p>
             </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl-mx-8"
-            >
-              <img
-                src="style/img/clients/Google-flutter-logo.png"
-                alt="flutter"
-                class=""
-              />
-              <p class="mt-2 mx-8">Beginner</p>
+            <a href="#" class="group relative flex flex-col items-center justify-center w-[130px] h-[130px] bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+              <img src="style/img/clients/Google-flutter-logo.png" alt="flutter" class="h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              <p class="mt-4 text-xs font-semibold text-gray-400 group-hover:text-white transition-colors uppercase tracking-wider">Beginner</p>
             </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl-mx-8"
-            >
-              <img
-                src="style/img/clients/JavaScript-logo.png"
-                alt="Javascript"
-                class=""
-              />
-              <p class="mt-2 mx-8">Advance</p>
+            <a href="#" class="group relative flex flex-col items-center justify-center w-[130px] h-[130px] bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+              <img src="style/img/clients/JavaScript-logo.png" alt="Javascript" class="h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              <p class="mt-4 text-xs font-semibold text-gray-400 group-hover:text-white transition-colors uppercase tracking-wider">Advanced</p>
             </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl-mx-8"
-            >
-              <img
-                src="style/img/clients/Laravel.svg.png"
-                alt="Laravel"
-                class=""
-              />
-              <p class="mt-2 mx-4">Beginner</p>
+            <a href="#" class="group relative flex flex-col items-center justify-center w-[130px] h-[130px] bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+              <img src="style/img/clients/Laravel.svg.png" alt="Laravel" class="h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              <p class="mt-4 text-xs font-semibold text-gray-400 group-hover:text-white transition-colors uppercase tracking-wider">Beginner</p>
             </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl-mx-8"
-            >
-              <img
-                src="style/img/clients/phpdone.png"
-                alt="php"
-                class=""
-              />
-              <p class="mt-2 mx-6">Beginner</p>
+            <a href="#" class="group relative flex flex-col items-center justify-center w-[130px] h-[130px] bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+              <img src="style/img/clients/phpdone.png" alt="php" class="h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              <p class="mt-4 text-xs font-semibold text-gray-400 group-hover:text-white transition-colors uppercase tracking-wider">Beginner</p>
             </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl-mx-8"
-            >
-              <img
-                src="style/img/clients/Mysql_logo.png"
-                alt="sql"
-                class=""
-              />
-              <p class="mt-2 mx-8">Advance</p>
+            <a href="#" class="group relative flex flex-col items-center justify-center w-[130px] h-[130px] bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+              <img src="style/img/clients/Mysql_logo.png" alt="sql" class="h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              <p class="mt-4 text-xs font-semibold text-gray-400 group-hover:text-white transition-colors uppercase tracking-wider">Advanced</p>
             </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl-mx-8"
-            >
-              <img
-                src="style/img/clients/Tailwind_CSS_logo.svg.png"
-                alt="tailwind"
-                class="max-w-[500]"
-              />
-              <p class="mt-2 mx-8">Advance</p>
+            <a href="#" class="group relative flex flex-col items-center justify-center w-[130px] h-[130px] bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+              <img src="style/img/clients/Tailwind_CSS_logo.svg.png" alt="tailwind" class="h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              <p class="mt-4 text-xs font-semibold text-gray-400 group-hover:text-white transition-colors uppercase tracking-wider">Advanced</p>
             </a>
-            <a
-              href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition hover:grayscale-0 hover:opacity-100 duration-500 lg:mx-6 xl-mx-8"
-            >
-              <img
-                src="style/img/clients/pythondoneee.png"
-                alt="python"
-                class="max-w-[500]"
-              />
-              <p class="mx-6">Beginner</p>
+            <a href="#" class="group relative flex flex-col items-center justify-center w-[130px] h-[130px] bg-white/5 border border-white/10 rounded-2xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-2">
+              <img src="style/img/clients/pythondoneee.png" alt="python" class="h-12 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300" />
+              <p class="mt-4 text-xs font-semibold text-gray-400 group-hover:text-white transition-colors uppercase tracking-wider">Beginner</p>
             </a>
           </div>
         </div>
@@ -479,96 +420,96 @@
     <!-- sertifikasi end -->
 
     <!-- sertifikat start -->
-    <section id="blog" class="pt-36 pb-32 bg-slate-200">
+    <section id="blog" class="pt-36 pb-32 bg-white">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-2xl text-primary">Certification</h4>
+            <h4 class="font-bold uppercase text-indigo-600 text-sm tracking-wider mb-2">Certification</h4>
             <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl font-heading"
             >
               Credentials Showcase
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
-              I have completed my professional certification, which showcases my unwavering commitment to continuous growth and learning on my path to becoming an expert
+            <p class="font-normal text-base text-gray-500 md:text-lg">
+              I have completed my professional certifications, which showcase my unwavering commitment to continuous growth and learning.
             </p>
           </div>
         </div>
 
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
-              <img src="style/img/blog/frontend.png" alt="front-end" class="w-full" />
-              <div class="py-8 px-6">
+        <div class="flex flex-wrap gap-y-8 justify-center">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="glass-card h-full overflow-hidden group pb-4 flex flex-col">
+              <img src="style/img/blog/frontend.png" alt="front-end" class="w-full object-cover border-b border-gray-100" />
+              <div class="pt-6 pb-2 px-6 flex justify-center mt-auto">
                 <a
                   href="https://www.dicoding.com/certificates/2VX3R5KY4ZYQ"
                   target="_blank"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                  class="btn-primary py-2 px-6 text-sm"
                   >Lihat Kredensial</a
                 >
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
-              <img src="style/img/blog/javascript.png" alt="javascript" class="w-full" />
-              <div class="py-8 px-6">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="glass-card h-full overflow-hidden group pb-4 flex flex-col">
+              <img src="style/img/blog/javascript.png" alt="javascript" class="w-full object-cover border-b border-gray-100" />
+              <div class="pt-6 pb-2 px-6 flex justify-center mt-auto">
                 <a
                   href="https://www.dicoding.com/certificates/L4PQ1QE02XO1"
                   target="_blank"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                  class="btn-primary py-2 px-6 text-sm"
                   >Lihat Kredensial</a
                 >
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
-              <img src="style/img/blog/sql.png" alt="sql" class="w-full" />
-              <div class="py-8 px-6">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="glass-card h-full overflow-hidden group pb-4 flex flex-col">
+              <img src="style/img/blog/sql.png" alt="sql" class="w-full object-cover border-b border-gray-100" />
+              <div class="pt-6 pb-2 px-6 flex justify-center mt-auto">
                 <a
                   href="https://www.dicoding.com/certificates/N9ZOMQJO8PG5"
                   target="_blank"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                  class="btn-primary py-2 px-6 text-sm"
                   >Lihat Kredensial</a
                 >
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
-              <img src="style/img/blog/tailwindcss.png" alt="tailwind" class="w-full" />
-              <div class="py-8 px-6">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="glass-card h-full overflow-hidden group pb-4 flex flex-col">
+              <img src="style/img/blog/tailwindcss.png" alt="tailwind" class="w-full object-cover border-b border-gray-100" />
+              <div class="pt-6 pb-2 px-6 flex justify-center mt-auto">
                 <a
                   href="https://codepolitan.com/c/KHBZJMT"
                   target="_blank"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                  class="btn-primary py-2 px-6 text-sm"
                   >Lihat Kredensial</a
                 >
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
-              <img src="style/img/blog/dasarpemograman.png" alt="dasarweb" class="w-full" />
-              <div class="py-8 px-6">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="glass-card h-full overflow-hidden group pb-4 flex flex-col">
+              <img src="style/img/blog/dasarpemograman.png" alt="dasarweb" class="w-full object-cover border-b border-gray-100" />
+              <div class="pt-6 pb-2 px-6 flex justify-center mt-auto">
                 <a
                   href="https://www.dicoding.com/certificates/53XEOLMKYZRN"
                   target="_blank"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                  class="btn-primary py-2 px-6 text-sm"
                   >Lihat Kredensial</a
                 >
               </div>
             </div>
           </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div class="bg-white rounded-xl overflow-hidden shadow-lg mb-10">
-              <img src="style/img/blog/python.png" alt="python" class="w-full" />
-              <div class="py-8 px-6">
+          <div class="w-full px-4 md:w-1/2 lg:w-1/3">
+            <div class="glass-card h-full overflow-hidden group pb-4 flex flex-col">
+              <img src="style/img/blog/python.png" alt="python" class="w-full object-cover border-b border-gray-100" />
+              <div class="pt-6 pb-2 px-6 flex justify-center mt-auto">
                 <a
                   href="https://www.dicoding.com/certificates/0LZ06ERNRZ65"
                   target="_blank"
-                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80"
+                  class="btn-primary py-2 px-6 text-sm"
                   >Lihat Kredensial</a
                 >
               </div>
@@ -580,68 +521,72 @@
     <!-- blog end -->
 
     <!-- kontak start -->
-    <section id="contactform" class="pt-36 pb-32">
+    <section id="contactform" class="pt-36 pb-32 bg-gray-50">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
-            <h4 class="font-semibold text-2xl text-primary">Contact</h4>
+            <h4 class="font-bold uppercase text-indigo-600 text-sm tracking-wider mb-2">Contact</h4>
             <h2
-              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl font-heading"
             >
-              Send a message😁
+              Get in Touch
             </h2>
-            <p class="font-medium text-md text-secondary md:text-lg">
+            <p class="font-normal text-base text-gray-500 md:text-lg">
               Feel free to reach out with any questions, project ideas, or collaboration opportunities. I look forward to hearing from you and will respond as soon as possible.
             </p>
           </div>
         </div>
 
         <form action="https://formspree.io/f/xkgwznen" id="kontak-form" method="POST">
-          <!-- <input type="hidden" name="_redirect" value="https://bakhtiar05.github.io/AboutKamil/thankyou.html"> -->
           <div class="w-full lg:w-2/3 lg:mx-auto">
-            <div class="w-full mb-8 px-4">
-              <label for="name" class="text-base text-primary font-bold"
-                >Nama</label
-              >
-              <input
-                type="text"
-                name="full-name"
-                id="name"
-                class="w-full bg-amber-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1"
-              />
-            </div>
-            <div class="w-full mb-8 px-4">
-              <label for="email" class="text-base text-primary font-bold"
-                >Email</label
-              >
-              <input
-                type="email"
-                id="email"
-                name="email"
-                class="w-full bg-amber-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1"
-              />
-            </div>
-            <div class="w-full mb-8 px-4">
-              <label for="pesan" class="text-base text-primary font-bold"
-                >Pesan</label
-              >
-              <textarea
-                type="pesan"
-                id="pesan"
-                name="message"
-                class="w-full bg-amber-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:border-primary focus:ring-1 h-32"
-              ></textarea>
-            </div>
-            <div class="w-full px-4">
-              <button type="submit"
-                class="text-base font-semibold bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
-              >
-                Kirim
-              </button>
-              <div
-              class="loader ease-linear mt-5 rounded-full border-4 border-t-4 border-gray-200 h-6 w-6 mx-auto"
-            ></div>
-            <div class="form-message mt-4 text-base font-medium text-primary"></div>
+            <div class="glass-card p-8 md:p-12 mb-8">
+              <div class="w-full mb-8">
+                <label for="name" class="text-sm text-gray-700 font-semibold mb-2 block"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  name="full-name"
+                  id="name"
+                  placeholder="John Doe"
+                  class="w-full bg-slate-50 text-dark p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                />
+              </div>
+              <div class="w-full mb-8">
+                <label for="email" class="text-sm text-gray-700 font-semibold mb-2 block"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  class="w-full bg-slate-50 text-dark p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                />
+              </div>
+              <div class="w-full mb-8">
+                <label for="pesan" class="text-sm text-gray-700 font-semibold mb-2 block"
+                  >Message</label
+                >
+                <textarea
+                  id="pesan"
+                  name="message"
+                  placeholder="How can I help you?"
+                  class="w-full bg-slate-50 text-dark p-4 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 h-40 resize-none"
+                ></textarea>
+              </div>
+              <div class="w-full">
+                <button type="submit"
+                  class="btn-primary w-full flex justify-center items-center"
+                >
+                   Send Message
+                   <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </button>
+                <div
+                class="loader ease-linear mt-5 rounded-full border-4 border-t-4 border-indigo-200 border-t-indigo-600 h-6 w-6 mx-auto"
+              ></div>
+              <div class="form-message mt-4 text-base font-medium text-indigo-600 text-center"></div>
+              </div>
             </div>
           </div>
         </form>
@@ -651,135 +596,56 @@
 
 
     <!-- footer start -->
-     <footer class="bg-dark pt-24 pb-12">
+     <footer class="bg-dark pt-20 pb-10 border-t border-white/10">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-amber-300 font-medium md:w-1/3">
-            <h2 class="font-bold text-4xl text-white mb-5">Bakhtiar Kamil</h2>
-            <h3 class="font-bold text-2xl mb-2">Hubungi kami</h3>
-            <p class="">Bakhtiarkamil5@gmail.com</p>
-            <p class="">Jl lanud gorda KM.07 kabupaten serang banten</p>
-            <p class="">Banten</p>
+          <div class="w-full px-4 mb-12 font-medium md:w-1/3">
+            <h2 class="font-bold text-3xl text-white mb-5 font-heading tracking-tight">Bakhtiar <span class="text-indigo-500">Kamil.</span></h2>
+            <p class="text-gray-400 mb-6 max-w-xs leading-relaxed font-normal">Aspiring IT professional focused on delivering sleek and maintainable digital experiences.</p>
+            <div class="space-y-3 text-gray-400 text-sm font-normal">
+              <p class="flex items-center"><svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> Bakhtiarkamil5@gmail.com</p>
+              <p class="flex items-center"><svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> Banten, Indonesia</p>
+            </div>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
-            <ul class=" text-amber-300">
-              <li class="">
-                <a href="#" class="inline-block text-base hover:text-primary mb-3">Progamming</a>
-              </li>
-            <ul class=" text-amber-300">
-              <li class="">
-                <a href="#" class="inline-block text-base hover:text-primary mb-3">Technology</a>
-              </li>
-            <ul class=" text-amber-300">
-              <li class="">
-                <a href="#" class="inline-block text-base hover:text-primary mb-3">Hardware</a>
-              </li>
+            <h3 class="font-semibold text-lg text-white mb-5">Writing Topics</h3>
+            <ul class="space-y-3">
+              <li><a href="#" class="inline-block text-sm text-gray-400 hover:text-indigo-400 transition-colors">Programming</a></li>
+              <li><a href="#" class="inline-block text-sm text-gray-400 hover:text-indigo-400 transition-colors">Technology</a></li>
+              <li><a href="#" class="inline-block text-sm text-gray-400 hover:text-indigo-400 transition-colors">Hardware</a></li>
             </ul>
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
-            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
-            <ul class=" text-amber-300">
-              <li class="">
-                <a href="#home" class="inline-block text-base hover:text-primary mb-3">Home</a>
-              </li>
-            <ul class=" text-amber-300">
-              <li class="">
-                <a href="#about" class="inline-block text-base hover:text-primary mb-3">About me</a>
-              </li>
-            <ul class=" text-amber-300">
-              <li class="">
-                <a href="#portofolio" class="inline-block text-base hover:text-primary mb-3">Portofolio</a>
-              </li>
-            </ul>
-            <ul class=" text-amber-300">
-              <li class="">
-                <a href="#blog" class="inline-block text-base hover:text-primary mb-3">Certification</a>
-              </li>
+            <h3 class="font-semibold text-lg text-white mb-5">Quick Links</h3>
+            <ul class="space-y-3">
+              <li><a href="#home" class="inline-block text-sm text-gray-400 hover:text-indigo-400 transition-colors">Home</a></li>
+              <li><a href="#about" class="inline-block text-sm text-gray-400 hover:text-indigo-400 transition-colors">About</a></li>
+              <li><a href="#portofolio" class="inline-block text-sm text-gray-400 hover:text-indigo-400 transition-colors">Portfolio</a></li>
+              <li><a href="#blog" class="inline-block text-sm text-gray-400 hover:text-indigo-400 transition-colors">Certification</a></li>
             </ul>
           </div>
         </div>
 
-        <div class="w-full pt-10 border-amber-700 border-t ">
-          <div class="flex items-center justify-center mb-5">
-            <!-- linkedin -->
-            <a
-              href="#"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-amber-300 hover:border-primary hover:bg-primary hover:text-white text-amber-300"
-            >
-              <svg
-                role="img"
-                width="20"
-                class="fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>LinkedIn</title>
-                <path
-                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-                />
-              </svg>
-            </a>
-            <!-- instagram -->
-            <a
-              href="#"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-amber-300 hover:border-primary hover:bg-primary hover:text-white text-amber-300"
-            >
-              <svg
-                role="img"
-                width="20"
-                class="fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Instagram</title>
-                <path
-                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
-                />
-              </svg>
-            </a>
-            <!-- tiktok -->
-            <a
-              href="#"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-amber-300 hover:border-primary hover:bg-primary hover:text-white text-amber-300"
-            >
-              <svg
-                role="img"
-                width="20"
-                class="fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>TikTok</title>
-                <path
-                  d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
-                />
-              </svg>
-            </a>
-            <!-- x -->
-            <a
-              href="#"
-              target="_blank"
-              class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-amber-300 hover:border-primary hover:bg-primary hover:text-white text-amber-300"
-            >
-              <svg
-                role="img"
-                width="20"
-                class="fill-current"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>X</title>
-                <path
-                  d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-                />
-              </svg>
-            </a>
+        <div class="w-full pt-8 border-t border-white/10 mt-4">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <p class="font-medium text-sm text-gray-500 text-center md:text-left mb-4 md:mb-0">
+              Made with <span class="text-pink-500 mx-1">❤️</span> by <a href="#" target="_blank" class="font-bold text-gray-300 hover:text-indigo-400 transition-colors">Bakhtiar Kamil</a>
+            </p>
+            <div class="flex items-center justify-center gap-4">
+              <a href="http://www.linkedin.com/in/bakhtiarkamil" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+                <svg width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/_bkamil/" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+                <svg width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+              </a>
+              <a href="#" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+                <svg width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+              </a>
+              <a href="#" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+                <svg width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+              </a>
+            </div>
           </div>
-          <p class="font-medium text-xs text-amber-500 text-center">Dibuat dengan <span class="text-pink-500">❤️</span> Oleh <a href="#" target="_blank" class="font-bold text-primary">Bakhtiar Kamil</a></p>
         </div>
       </div>
      </footer>

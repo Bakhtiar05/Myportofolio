@@ -2,19 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #fbfcf8;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-custom-bg text-dark font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] bg-opacity-70;
-  backdrop-filter: blur(5px);
-  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+  @apply fixed z-[9999] bg-white/70;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hamburger-line {
-  @apply w-[30px] h-[2px] my-2 block bg-dark;
+  @apply w-[30px] h-[2px] my-2 block bg-dark rounded-full transition-all duration-300;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -22,46 +31,68 @@ body {
 }
 
 .hamburger-active > span:nth-child(2) {
-  @apply scale-0;
+  @apply scale-0 opacity-0;
 }
 
 .hamburger-active > span:nth-child(3) {
   @apply -rotate-45;
 }
 
-
 .loader {
-  border-top-color: #ef4444;
+  border-top-color: #6366F1;
   display: none;
   -webkit-animation: spinner 1.5s linear infinite;
   animation: spinner 1.5s linear infinite;
 }
 
 @-webkit-keyframes spinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
 }
 
 @keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 .zoomed-in {
-    transform: scale(1.5);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .indent {
-    text-indent: 3em;
+    text-indent: 1.5em;
     text-align: justify;
     hyphens: auto;
 }
 
+/* Custom premium classes */
+.glass-card {
+  @apply bg-white border border-gray-100 rounded-2xl;
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-500;
+}
+
+.btn-primary {
+  @apply text-base font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-500 py-3 px-8 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-in-out;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

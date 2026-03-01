@@ -54,3 +54,24 @@ document.getElementById('kontak-form').addEventListener('submit', function (even
     formMessage.style.color = 'red'; // Ubah warna pesan sesuai kebutuhan
   });
 });
+
+// Scroll Reveal Animations
+document.addEventListener("DOMContentLoaded", function() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  });
+
+  reveals.forEach(reveal => {
+    revealObserver.observe(reveal);
+  });
+});
