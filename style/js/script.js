@@ -75,3 +75,40 @@ document.addEventListener("DOMContentLoaded", function() {
     revealObserver.observe(reveal);
   });
 });
+
+// Hero 3D Parallax Effect
+document.addEventListener("DOMContentLoaded", function() {
+  const wrapper = document.getElementById("hero-image-wrapper");
+  const heroImage = document.getElementById("hero-image");
+
+  if (!wrapper || !heroImage) return;
+
+  // Only apply parallax on desktop
+  const isDesktop = window.matchMedia("(min-width: 1024px)");
+
+  function handleMouseMove(e) {
+    if (!isDesktop.matches) return;
+
+    const rect = wrapper.getBoundingClientRect();
+    
+    // Calculate mouse position relative to the center of the element
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+
+    // Adjust these values to increase/decrease the tilt amount
+    const tiltX = (y / rect.height) * -20; // Max tilt up/down 10 deg
+    const tiltY = (x / rect.width) * 20; // Max tilt left/right 10 deg
+
+    heroImage.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.05, 1.05, 1.05) translateZ(20px)`;
+  }
+
+  function handleMouseLeave() {
+    if (!isDesktop.matches) return;
+    
+    // Reset transform on mouse leave
+    heroImage.style.transform = `rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1) translateZ(0)`;
+  }
+
+  wrapper.addEventListener("mousemove", handleMouseMove);
+  wrapper.addEventListener("mouseleave", handleMouseLeave);
+});

@@ -130,11 +130,14 @@
           </div>
 
           <div class="w-full self-end px-4 mt-16 lg:mt-0 lg:w-1/2">
-            <div class="relative max-w-md mx-auto">
-              <!-- Soft shadow behind image -->
-              <div class="absolute inset-0 bg-gradient-to-tr from-indigo-200 to-purple-200 rounded-full blur-2xl opacity-60 transform scale-90"></div>
+            <div class="relative max-w-md mx-auto" id="hero-image-wrapper" style="perspective: 1000px;">
+              <!-- Premium animated background glow -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-purple-400 to-indigo-500 rounded-full blur-3xl opacity-30 animate-blob mix-blend-multiply transform scale-105"></div>
+              <!-- Secondary blob for more organic movement -->
+              <div class="absolute inset-0 bg-gradient-to-bl from-indigo-300 to-purple-400 rounded-full blur-3xl opacity-30 animate-blob mix-blend-multiply transform scale-95" style="animation-delay: 3s"></div>
               <img
-                class="relative z-10 mx-auto w-full object-cover p-4 rounded-3xl"
+                id="hero-image"
+                class="relative z-10 mx-auto w-full object-cover p-4 rounded-3xl animate-float transition-transform duration-300 ease-out"
                 src="./style/img/herrrotransparent.svg"
                 alt="Bakhtiar Kamil Photo"
               />
